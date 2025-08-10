@@ -20,7 +20,7 @@ function ProjectCard({project}) {
         <BoxReveal><img src={project.img} alt="" /></BoxReveal>
       </CardHeader>
       <CardContent>
-        <div><TextAnimate animation='slideUp' by='word'>{project.content}</TextAnimate></div><br />
+        <div>{project.content}</div><br />
         
          <div className='flex flex-wrap gap-1 h-[50px]'>
         {project.skills.map((skill)=>(<div className='px-1  bg-zinc-700 shadow-xl text-gray-100 h-fit '>{skill}</div>))
